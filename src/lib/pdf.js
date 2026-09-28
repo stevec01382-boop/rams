@@ -147,7 +147,7 @@ export function buildDocDefinition(data) {
             width: '*',
             stack: [
               { text: 'RISK ASSESSMENT & METHOD STATEMENT', style: 'coverTitle' },
-              { text: 'Hutchi Technologies B.V.', style: 'coverSub' },
+              { text: 'Hutchi UK — By Hutchison Technologies', style: 'coverSub' },
             ],
             margin: [12, 2, 0, 0],
           }] },
@@ -157,7 +157,13 @@ export function buildDocDefinition(data) {
       }]],
     },
     layout: { hLineWidth: () => 0, vLineWidth: () => 0, paddingLeft: () => 0, paddingRight: () => 0, paddingTop: () => 0, paddingBottom: () => 0 },
-    margin: [0, 0, 0, 16],
+    margin: [0, 0, 0, 4],
+  })
+
+  content.push({
+    text: 'Hutchi UK is a trading name of Hutchison Technologies Ltd, registered in Scotland No. SC176095. Registered office: Innovation Centre, 1 Harrison Road, Dundee, DD2 3SN.',
+    style: 'small',
+    margin: [0, 0, 0, 14],
   })
 
   content.push(kv([
@@ -347,7 +353,7 @@ export function buildDocDefinition(data) {
     pageMargins: [40, 40, 40, 50],
     footer: (currentPage, pageCount) => ({
       columns: [
-        { text: `${project.clientName || 'Hutchi RAMS'} — ${project.jobRef || ''}`, style: 'footer', margin: [40, 0, 0, 0] },
+        { text: `${project.clientName || 'Hutchi UK'} — ${project.jobRef || ''}`, style: 'footer', margin: [40, 0, 0, 0] },
         { text: `Page ${currentPage} of ${pageCount}`, style: 'footer', alignment: 'right', margin: [0, 0, 40, 0] },
       ],
     }),

@@ -7,7 +7,7 @@ export default function Topbar({ route, navigate, saveState }) {
       <img src={logo} alt="Hutchi" />
       <div className="brand">
         RAMS Builder
-        <small>Hutchi Technologies</small>
+        <small>Hutchi UK — By Hutchison Technologies</small>
       </div>
       <nav>
         <a href="#/" className={route === 'home' || route === '' ? 'active' : ''}>Home</a>
